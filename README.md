@@ -1,66 +1,78 @@
 # GroupCollaborationTool
 
-Tool to allow developers to collaborate on open source and private projects
+A [WeDev Atlanta Meetup](https://meetup.com/webdevatlanta) project. A tool for collaboration, that's being built through collaboration. Neat!
 
-## Installing dependencies:
+Here's how to get started:
 
-cd group-collaboration folder
+## Get a copy of this repo
 
-```
-npm install
-```
+1.  Fork this respository by [clicking here](https://github.com/webdevatlanta/GroupCollaborationTool/fork).
 
-## Start the app:
+2.  Clone the forked copy to your computer:
 
 ```
-cd group-collaboration
+git clone https://gthub.com/<your-user-name>/GroupCollaborationTool.git
 ```
 
-```
-npm start
-```
-
-or
-
-```
-yarn start
-```
-
-## Visit in browser:
-
-http://localhost:3000
-
-## Contributing to this open source project
-
-1. Fork the repo so you have your own copy to work off of.
-2. Clone your forked copy (So will have you user name in the clone link)
 3. Add an upstream to the shared repo:
 
 ```
+cd GroupCollaborationTool
 git remote add upstream https://github.com/webdevatlanta/GroupCollaborationTool.git
 ```
 
-4. Always start off fresh when working on a repo:
+## Making your contribution
+
+1. Always start off by fetching and merging the latest changes:
 
 ```
-get checkout master
+git checkout master
 git fetch --all
-git pull upstream master
+git merge upstream/master
 ```
 
-5. Create a feature branch based off master:
+2. Install/update dependencies
+
+```
+yarn install
+```
+
+2. Create a feature branch based off master:
 
 ```
 git checkout -B my_feature_branch_name_here
 ```
 
-6. Do you work on your feature branch
-7. Add, commit, and push your feature branch to your Github:
+3. Start the dev server
+
+```
+yarn start
+```
+
+4. ...make your edits, fix a bug, implement a feature, etc. If you're looking for something to work on, check out our [Issues](https://github.com/webdevatlanta/GroupCollaborationTool/issues) page.
+
+5. Add, commit, and push your feature branch to your Github:
 
 ```
 git add .
-git commit -m "My new feature I made"
+git commit -m "Enter your description of your changes."
 git push origin my_feature_branch_name_here
 ```
 
-8. Go to your forked repo on github and create a pull request from your feature branch to master
+5.  Use your GitHub page to create a pull request from your feature branch to master.
+
+6.  One of the admins will then merge your changes into the main branch.
+
+7.  Return to step 1 and repeat: fetch, merge, branch, edit, commit, push!
+
+## Running tests
+
+1. Run the React test script:
+
+```
+yarn test
+```
+
+2. You will be prompted with a list of options. Most likely, you'll want to press 'A' on your keyboard to run all tests.
+
+3. After the tests have run, press 'Q' on your keyboard to exit.
